@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jafdel.lil.roomclr.RoomClrApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-20T16:03:38.756Z" hostname="HP-BRITOP" time="22.64">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.jafdel.lil.roomclr.RoomClrApplicationTests" time="7.626"/>
+  <system-out><![CDATA[17:03:41.366 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.jafdel.lil.roomclr.RoomClrApplicationTests]: RoomClrApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:03:42.599 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.jafdel.lil.roomclr.RoomClrApplication for test class com.jafdel.lil.roomclr.RoomClrApplicationTests
+17:03:43.644 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.jafdel.lil.roomclr.RoomClrApplicationTests]: RoomClrApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:03:43.658 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.jafdel.lil.roomclr.RoomClrApplication for test class com.jafdel.lil.roomclr.RoomClrApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-20T17:03:47.529+01:00  INFO 1332 --- [room-CLR] [    Test worker] c.j.lil.roomclr.RoomClrApplicationTests  : Starting RoomClrApplicationTests using Java 25.0.2 with PID 1332 (started by Brian in C:\Users\Brian\Spring Boot 3 Essential Training\room-CLR)
+2026-10-20T17:03:47.545+01:00  INFO 1332 --- [room-CLR] [    Test worker] c.j.lil.roomclr.RoomClrApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2026-10-20T17:03:53.621+01:00  INFO 1332 --- [room-CLR] [    Test worker] c.j.lil.roomclr.RoomClrApplicationTests  : Started RoomClrApplicationTests in 9.197 seconds (process running for 29.244)
+Counting: 1
+Counting: 2
+Counting: 3
+Counting: 4
+Counting: 5
+Counting: 6
+Counting: 7
+Counting: 8
+Counting: 9
+Counting: 10
+Counting: 11
+Counting: 12
+Counting: 13
+Counting: 14
+Counting: 15
+Counting: 16
+Counting: 17
+Counting: 18
+Counting: 19
+Counting: 20
+Counting: 21
+Counting: 22
+Counting: 23
+Counting: 24
+Counting: 25
+Counting: 26
+Counting: 27
+Counting: 28
+Counting: 29
+Counting: 30
+Counting: 31
+Counting: 32
+Counting: 33
+Counting: 34
+Counting: 35
+Counting: 36
+Counting: 37
+Counting: 38
+Counting: 39
+Counting: 40
+Counting: 41
+Counting: 42
+Counting: 43
+Counting: 44
+Counting: 45
+Counting: 46
+Counting: 47
+Counting: 48
+Counting: 49
+Counting: 50
+Counting: 51
+Counting: 52
+Counting: 53
+Counting: 54
+Counting: 55
+Counting: 56
+Counting: 57
+Counting: 58
+Counting: 59
+Counting: 60
+Counting: 61
+Counting: 62
+Counting: 63
+Counting: 64
+Counting: 65
+Counting: 66
+Counting: 67
+Counting: 68
+Counting: 69
+Counting: 70
+Counting: 71
+Counting: 72
+Counting: 73
+Counting: 74
+Counting: 75
+Counting: 76
+Counting: 77
+Counting: 78
+Counting: 79
+Counting: 80
+Counting: 81
+Counting: 82
+Counting: 83
+Counting: 84
+Counting: 85
+Counting: 86
+Counting: 87
+Counting: 88
+Counting: 89
+Counting: 90
+Counting: 91
+Counting: 92
+Counting: 93
+Counting: 94
+Counting: 95
+Counting: 96
+Counting: 97
+Counting: 98
+Counting: 99
+Counting: 100
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\Brian\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.18.11\82212e5b3633e7a65fca8bec525762cfb6c9bae4\byte-buddy-agent-1.18.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
