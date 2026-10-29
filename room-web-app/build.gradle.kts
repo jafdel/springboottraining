@@ -19,16 +19,26 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-h2console")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa") {
+        exclude(group = "org.springframework.boot", module = "spring-boot-starter-jdbc")
+        exclude(group = "org.springframework.boot", module = "spring-boot-hibernate")
+    }
+    implementation("org.springframework.boot:spring-boot-starter-jdbc") {
+        exclude(group = "com.zaxxer", module = "HikariCP")
+    }
     compileOnly("org.projectlombok:lombok")
-    runtimeOnly("com.h2database:h2")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-data-jpa-test")
     testCompileOnly("org.projectlombok:lombok")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testAnnotationProcessor("org.projectlombok:lombok")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.postgresql:postgresql")
+    implementation("com.zaxxer:HikariCP:7.1.0")
+    implementation("org.springframework.boot:spring-boot-hibernate") {
+        exclude(group = "org.hibernate.orm", module = "hibernate-core")
+    }
+    implementation("org.hibernate.orm:hibernate-core:7.4.10.Final")
 }
 
 tasks.withType<Test> {

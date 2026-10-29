@@ -1,5 +1,1 @@
-docker run -d --rm --name pg-docker \
--e POSTGRES_PASSWORD=postgres \
--e POSTGRES_DB=local \
--p 5432:5432 \
-postgres:17.2
+docker run -d --name pg-docker -v /mnt/wsl/pg_sockets:/var/run/postgresql -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=local -p 5432:5432 postgres:latest -c unix_socket_directories='/var/run/postgresql' -c port=5432 -c listen_addresses='*' -c log_destination='stderr' -c logging_collector=on -c log_directory='pg_log' -c syslog_facility='LOCAL0' -c syslog_ident='postgres' -c log_min_messages=warning -c log_min_error_statement=error -c log_statement='all' -c log_min_duration_statement=0
