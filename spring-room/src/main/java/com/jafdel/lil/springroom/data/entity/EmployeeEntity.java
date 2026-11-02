@@ -9,24 +9,6 @@ import java.util.UUID;
 
 import static jakarta.persistence.EnumType.STRING;
 
-enum EmployeePosition {
-    HOUSEKEEPING, FRONT_DESK, SECURITY, CONCIERGE;
-
-    public String toString() {
-        switch (this) {
-            case FRONT_DESK:
-                return "Front desk";
-            case HOUSEKEEPING:
-                return "Housekeeping";
-            case SECURITY:
-                return "Security";
-            case CONCIERGE:
-                return "Concierge";
-        }
-        return "";
-    }
-}
-
 @Entity
 @Table(name="EMPLOYEES")
 @Getter
