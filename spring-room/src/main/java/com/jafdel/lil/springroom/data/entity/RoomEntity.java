@@ -1,13 +1,17 @@
 package com.jafdel.lil.springroom.data.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
 @Table(name="ROOMS")
 @Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class RoomEntity {
     @Id
     @GeneratedValue(strategy=GenerationType.UUID)
