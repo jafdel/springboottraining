@@ -1,9 +1,7 @@
 package com.jafdel.lil.springroom.data.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.UUID;
 
@@ -14,6 +12,8 @@ import static jakarta.persistence.EnumType.STRING;
 @Getter
 @Setter
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class EmployeeEntity {
     @Id
     @GeneratedValue(strategy= GenerationType.UUID)
