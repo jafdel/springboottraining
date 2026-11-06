@@ -29,6 +29,7 @@ dependencies {
     implementation("org.springframework:spring-web")
     implementation("org.springframework.boot:spring-boot-starter-restclient")
     implementation("org.springframework.boot:spring-boot-starter-json")
+    implementation("org.springframework.boot:spring-boot-starter-amqp")
 }
 
 tasks.withType<Test> {
