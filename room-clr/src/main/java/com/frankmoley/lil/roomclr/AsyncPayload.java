@@ -1,4 +1,4 @@
-package com.frankmoley.lil.roomwebapp.aysnc;
+package com.frankmoley.lil.roomclr;
 
 import lombok.Data;
 import java.util.UUID;
