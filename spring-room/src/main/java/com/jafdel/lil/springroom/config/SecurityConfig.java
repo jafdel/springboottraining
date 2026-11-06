@@ -15,7 +15,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests(requests -> requests.requestMatchers("/", "/api/*").permitAll().anyRequest().authenticated()).formLogin(form -> form.loginPage("/login").permitAll()).logout(logout -> logout.permitAll());
+        http.authorizeHttpRequests(requests -> requests.requestMatchers("/", "/api/*", "/api/rest/*").permitAll().anyRequest().authenticated()).formLogin(form -> form.loginPage("/login").permitAll()).logout(logout -> logout.permitAll());
         return http.build();
     }
 
