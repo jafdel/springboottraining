@@ -13,13 +13,13 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AsyncConfig {
-    private static final String QUEUE_NAME = "room-cleaner";
-    private static final String EXCHANGE_NAME = "operations";
+  private static final String QUEUE_NAME = "room-cleaner";
+  private static final String EXCHANGE_NAME = "operations";
 
-    @Bean
-    public Queue queue() {
-        return new Queue(QUEUE_NAME, false);
-    }
+  @Bean
+  public Queue queue() {
+    return new Queue(QUEUE_NAME, false);
+  }
 
     @Bean
     public TopicExchange exchange() {
@@ -31,10 +31,10 @@ public class AsyncConfig {
         return BindingBuilder.bind(queue).to(exchange).with("landon.rooms.cleaner");
     }
 
-    @Bean
-    MessageListenerAdapter listenerAdapter(RoomCleanerListener listener) {
-        return new MessageListenerAdapter(listener, "receiveMessage");
-    }
+  @Bean
+  public MessageListenerAdapter listenerAdapter (RoomCleanerListener listener){
+    return new MessageListenerAdapter(listener, "receiveMessage");
+  }
 
     @Bean
     public SimpleMessageListenerContainer container(ConnectionFactory connectionFactory, MessageListenerAdapter listenerAdapter) {
