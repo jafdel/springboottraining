@@ -32,6 +32,8 @@ dependencies {
         exclude(group = "org.springframework.boot", module = "spring-boot-starter")
     }
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.springframework.security:spring-security-test")
 }
 
 tasks.withType<Test> {
